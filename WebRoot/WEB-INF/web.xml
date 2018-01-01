@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>ShowDesk</servlet-name>
+    <servlet-class>com.et.controller.ShowDesk</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodList</servlet-name>
+    <servlet-class>com.et.controller.FoodList</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddFoodServlet</servlet-name>
+    <servlet-class>com.et.controller.AddFoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>com.et.tool.ImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodCart</servlet-name>
+    <servlet-class>com.et.controller.FoodCart</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ShowDesk</servlet-name>
+    <url-pattern>/ShowDesk</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodList</servlet-name>
+    <url-pattern>/FoodList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFoodServlet</servlet-name>
+    <url-pattern>/AddFoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodCart</servlet-name>
+    <url-pattern>/FoodCart</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
